@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import PostsList from './features/posts/PostsList'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h2 className="mb-5">React RTK Query CRUD Operations Example</h2>
+      <PostsList />
     </div>
-  );
+  )
 }
-
-export default App;
+export default App
